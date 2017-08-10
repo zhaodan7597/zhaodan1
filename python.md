@@ -207,11 +207,13 @@ Python会将圆括号, 中括号和花括号中的行隐式的连接起来 <http
 
 .. code-block:: python
 
-    Yes: def complex(real, imag=0.0): return magic(r=real, i=imag)
+    Yes: def complex(real, imag=0.0): 
+             return magic(r=real, i=imag)
     
 .. code-block:: python
     
-    No:  def complex(real, imag = 0.0): return magic(r = real, i = imag)
+    No:  def complex(real, imag = 0.0): 
+             return magic(r = real, i = imag) 
     
 不要用空格来垂直对齐多行间的标记, 因为这会成为维护的负担(适用于:, #, =等):
 
